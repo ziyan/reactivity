@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f15f7689-0726-4b46-998b-160353c1b636" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://service.reac.tivity.org/client.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="client.wsdl" MetadataType="Wsdl" ID="44c1115b-51e0-41b9-9397-d4d8f2450938" SourceId="1" SourceUrl="http://joedesktop/client.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="client.disco" MetadataType="Disco" ID="4ad3284a-0817-466b-bd1c-b88876357321" SourceId="1" SourceUrl="http://joedesktop/client.svc?disco" />
+    <MetadataFile FileName="ClientService.wsdl" MetadataType="Wsdl" ID="fa8fec50-9d93-446e-810d-b26e2211d263" SourceId="1" SourceUrl="http://joedesktop/client.svc?wsdl" />
+    <MetadataFile FileName="client.xsd" MetadataType="Schema" ID="68255d0b-51bd-462b-b7d5-3f389547d17e" SourceId="1" SourceUrl="http://joedesktop/client.svc?xsd=xsd4" />
+    <MetadataFile FileName="client1.xsd" MetadataType="Schema" ID="9f06ac62-5eb3-4999-9923-015f07e7a292" SourceId="1" SourceUrl="http://joedesktop/client.svc?xsd=xsd3" />
+    <MetadataFile FileName="client2.xsd" MetadataType="Schema" ID="f58b0253-e736-4ca9-9f3f-845ec48cad8c" SourceId="1" SourceUrl="http://joedesktop/client.svc?xsd=xsd2" />
+    <MetadataFile FileName="client3.xsd" MetadataType="Schema" ID="6c083ae4-f634-4a55-a463-247acf55187a" SourceId="1" SourceUrl="http://joedesktop/client.svc?xsd=xsd1" />
+    <MetadataFile FileName="client4.xsd" MetadataType="Schema" ID="16e09c80-4d93-4963-bc01-8f3ca3e5e07b" SourceId="1" SourceUrl="http://joedesktop/client.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

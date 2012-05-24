@@ -1,0 +1,52 @@
+﻿<Window x:Class="Reactivity.UI.ControlPanel.Editors.UserEditDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:objs="clr-namespace:Reactivity.Objects;assembly=Reactivity"
+    Title="User Editing" Height="500" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Keyboard.KeyUp="Window_KeyUp">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="65">
+            <Grid.Background>
+                <ImageBrush ImageSource="../Resources/banner.jpg"></ImageBrush>
+            </Grid.Background>
+            <TextBlock FontFamily="Verdana" Margin="10" FontSize="20" FontWeight="Bold" Text="{Binding ElementName=UserName, Path=Text}"></TextBlock>
+            <TextBlock FontFamily="Verdana" Margin="10,35,10,14" Text="{Binding ElementName=UserDescription, Path=Text}"></TextBlock>
+        </Grid>
+        <StackPanel Margin="10" DockPanel.Dock="Bottom" Height="30" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="CancelButton" Margin="4" Width="80" Click="CancelButton_Click">Cancel</Button>
+            <Button x:Name="OKButton" Margin="4" Width="80" FontWeight="Bold" Click="OKButton_Click">OK</Button>
+        </StackPanel>
+        
+        <TabControl Margin="10,0">
+            <TabItem Header="General">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="175" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label HorizontalContentAlignment="Right" Margin="3">ID:</Label>
+                    <Label Grid.Row="1" HorizontalContentAlignment="Right" Margin="3">Username:</Label>
+                    <Label Grid.Row="2" HorizontalContentAlignment="Right" Margin="3">Name:</Label>
+                    <Label Grid.Row="3" HorizontalContentAlignment="Right" Margin="3">Description:</Label>
+                    <Label Grid.Row="4" HorizontalContentAlignment="Right" Margin="3">Permission:</Label>
+                    <TextBox Grid.Column="1" Margin="5" x:Name="UserID" Text="" IsReadOnly="True"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="5" x:Name="UserUsername" Text=""></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="1" Margin="5" x:Name="UserName" Text="&lt;New User&gt;"></TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="5" x:Name="UserDescription" Text="" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+                    <StackPanel Grid.Row="4" Grid.Column="1" Margin="5" Orientation="Horizontal">
+                        <CheckBox x:Name="UserPermissionSubscribe" Margin="2, 5">Subscribe</CheckBox>
+                        <CheckBox x:Name="UserPermissionControl" Margin="2, 5">Control</CheckBox>
+                        <CheckBox x:Name="UserPermissionStats" Margin="2, 5">Stats</CheckBox>
+                        <CheckBox x:Name="UserPermissionAdmin" Margin="2, 5">Admin</CheckBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>

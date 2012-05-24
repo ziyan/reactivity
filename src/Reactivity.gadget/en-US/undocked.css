@@ -1,0 +1,88 @@
+﻿#config
+{
+	width:120px;
+	padding-top:70px;
+	display:none;
+}
+#progress
+{
+	width:120px;
+	padding-top:70px;
+}
+#progress img
+{
+	margin-bottom:10px;
+}
+
+.device
+{
+	position:absolute;
+	top: 19px;
+	left: 19px;
+	width: 250px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.device .icon
+{
+	width: 60px;
+	height:60px;
+	float:left;
+}
+
+.device .name
+{
+	font-size:11pt;
+	font-weight:bold;
+	width:160px;
+	line-height:120%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.device .data
+{
+	font-size:20pt;
+	font-weight:bold;
+	width:160px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: clip;
+}
+
+.device .type
+{
+	font-size:9pt;
+	width:160px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+.device .description
+{
+	display:none;
+}
+
+#graph_undocked
+{
+	display:none;
+}
+.graph_undocked
+{
+	overflow:hidden;
+	width:250px;
+	height:90px;
+	top:90px;
+	left:19px;
+	position:absolute;
+}
+#footer
+{
+	width:250px;
+	height:20px;
+	top:185px;
+	left:19px;
+	position:absolute;
+}

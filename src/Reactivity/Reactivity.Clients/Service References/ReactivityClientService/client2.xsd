@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Reactivity.Objects" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Reactivity.Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://joedesktop/client.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfClientEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientEvent" nillable="true" type="tns:ClientEvent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientEvent" nillable="true" type="tns:ArrayOfClientEvent" />
+  <xs:complexType name="ClientEvent">
+    <xs:sequence>
+      <xs:element name="_x003C_Data_x003E_k__BackingField" nillable="true" type="tns:Data" />
+      <xs:element name="_x003C_Device_x003E_k__BackingField" nillable="true" type="tns:Device" />
+      <xs:element name="_x003C_Guid_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Rule_x003E_k__BackingField" nillable="true" type="tns:Rule" />
+      <xs:element name="_x003C_String_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Subscription_x003E_k__BackingField" nillable="true" type="tns:Subscription" />
+      <xs:element name="_x003C_Timestamp_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="tns:ClientEventType" />
+      <xs:element name="_x003C_User_x003E_k__BackingField" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientEvent" nillable="true" type="tns:ClientEvent" />
+  <xs:complexType name="Data">
+    <xs:sequence>
+      <xs:element name="_x003C_Device_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Service_x003E_k__BackingField" type="xs:short" />
+      <xs:element name="_x003C_Timestamp_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="tns:DataType" />
+      <xs:element name="_x003C_Value_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Data" nillable="true" type="tns:Data" />
+  <xs:simpleType name="DataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="String" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="Float" />
+      <xs:enumeration value="Int" />
+      <xs:enumeration value="UInt" />
+      <xs:enumeration value="Short" />
+      <xs:enumeration value="UShort" />
+      <xs:enumeration value="Long" />
+      <xs:enumeration value="ULong" />
+      <xs:enumeration value="Byte" />
+      <xs:enumeration value="Bytes" />
+      <xs:enumeration value="Bool" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DataType" nillable="true" type="tns:DataType" />
+  <xs:complexType name="Device">
+    <xs:sequence>
+      <xs:element name="_x003C_Configuration_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Guid_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Profile_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Status_x003E_k__BackingField" type="tns:DeviceStatus" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Device" nillable="true" type="tns:Device" />
+  <xs:simpleType name="DeviceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Offline" />
+      <xs:enumeration value="Online" />
+      <xs:enumeration value="Paused" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DeviceStatus" nillable="true" type="tns:DeviceStatus" />
+  <xs:complexType name="Rule">
+    <xs:sequence>
+      <xs:element name="_x003C_Configuration_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_IsEnabled_x003E_k__BackingField" type="xs:boolean" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Precedence_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Status_x003E_k__BackingField" type="tns:RuleStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rule" nillable="true" type="tns:Rule" />
+  <xs:simpleType name="RuleStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Stopped" />
+      <xs:enumeration value="Running" />
+      <xs:enumeration value="CompileError" />
+      <xs:enumeration value="InitError" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RuleStatus" nillable="true" type="tns:RuleStatus" />
+  <xs:complexType name="Subscription">
+    <xs:sequence>
+      <xs:element name="_x003C_Device_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Guid_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Service_x003E_k__BackingField" type="xs:short" />
+      <xs:element name="_x003C_Status_x003E_k__BackingField" type="tns:SubscriptionStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subscription" nillable="true" type="tns:Subscription" />
+  <xs:simpleType name="SubscriptionStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Running" />
+      <xs:enumeration value="Paused" />
+      <xs:enumeration value="Stopped" />
+      <xs:enumeration value="Unknown" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubscriptionStatus" nillable="true" type="tns:SubscriptionStatus" />
+  <xs:simpleType name="ClientEventType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UserLogout" />
+      <xs:enumeration value="DeviceCreation" />
+      <xs:enumeration value="DeviceUpdate" />
+      <xs:enumeration value="DeviceRemoval" />
+      <xs:enumeration value="SubscriptionUpdate" />
+      <xs:enumeration value="SubscriptionNotification" />
+      <xs:enumeration value="UserCreation" />
+      <xs:enumeration value="UserUpdate" />
+      <xs:enumeration value="UserRemoval" />
+      <xs:enumeration value="NodeCreation" />
+      <xs:enumeration value="NodeUpdate" />
+      <xs:enumeration value="NodeRemoval" />
+      <xs:enumeration value="RuleCreation" />
+      <xs:enumeration value="RuleUpdate" />
+      <xs:enumeration value="RuleRemoval" />
+      <xs:enumeration value="RuleChainReloadBegin" />
+      <xs:enumeration value="RuleChainReloadCompileError" />
+      <xs:enumeration value="RuleChainReloadCompileSuccess" />
+      <xs:enumeration value="RuleChainReloadError" />
+      <xs:enumeration value="RuleChainReloadEnd" />
+      <xs:enumeration value="RuleChainRuleDebug" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ClientEventType" nillable="true" type="tns:ClientEventType" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_ID_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Permission_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Username_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="ArrayOfRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rule" nillable="true" type="tns:Rule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRule" nillable="true" type="tns:ArrayOfRule" />
+  <xs:complexType name="ArrayOfDevice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Device" nillable="true" type="tns:Device" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDevice" nillable="true" type="tns:ArrayOfDevice" />
+  <xs:complexType name="ArrayOfData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Data" nillable="true" type="tns:Data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfData" nillable="true" type="tns:ArrayOfData" />
+  <xs:simpleType name="StatisticsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Minutely">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Hourly">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Daily">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Monthly">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StatisticsType" nillable="true" type="tns:StatisticsType" />
+  <xs:complexType name="ArrayOfStatistics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Statistics" nillable="true" type="tns:Statistics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStatistics" nillable="true" type="tns:ArrayOfStatistics" />
+  <xs:complexType name="Statistics">
+    <xs:sequence>
+      <xs:element name="_x003C_Count_x003E_k__BackingField" type="xs:long" />
+      <xs:element name="_x003C_Date_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Device_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Service_x003E_k__BackingField" type="xs:short" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="tns:StatisticsType" />
+      <xs:element name="_x003C_Value_x003E_k__BackingField" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Statistics" nillable="true" type="tns:Statistics" />
+</xs:schema>

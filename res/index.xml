@@ -1,0 +1,13 @@
+<resource>
+  <building id="323bb94c-14b9-41cf-88be-3b67caf98ae0" name="RIT Gleason" description="Building 9 is the home of Engineering" longitude="43.084148" latitude="-77.677487" altitude="0.0">
+    <floor level="1" name="First Floor" description="Classroooms, Toyota Workshop, Erdle Commons" resource="60affc7f-4837-4a06-b1ac-e73f256d9920"/>
+    <floor level="2" name="Second Floor" description="Classrooms" resource="8da41620-48e4-49fc-85b7-c8c065a7b87d"/>
+    <floor level="3" name="Third Floor" description="Classrooms, Robotics Lab" resource="d7822770-6592-4e92-a30c-fa34ef1ba617"/>
+  </building>
+  <building id="a1f542e4-6b9b-4ad4-a742-19c36a995d41" name="RIT Library" description="RIT Wallace Library" longitude="43.083978" latitude="-77.67636" altitude="0.0">
+    <floor level="2" name="Second Floor" description="" resource="60245c45-57d7-455f-a932-f2342cba0bd9"/>
+    <floor level="3" name="Third Floor" description="" resource="5b918777-5aa0-4437-9a74-9a2e1a09fcb9"/>
+    <floor level="4" name="Fourth Floor" description="" resource="9b1cdb67-d020-462b-afaf-6666d8142290"/>
+    <floor level="5" name="Fifth Floor" description="" resource="907a9fcc-94f4-4712-8fce-a0ed236d589b"/>
+  </building>
+</resource>

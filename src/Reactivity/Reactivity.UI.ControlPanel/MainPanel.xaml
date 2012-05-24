@@ -1,0 +1,131 @@
+﻿<Window x:Class="Reactivity.UI.ControlPanel.MainPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:objs="clr-namespace:Reactivity.Objects;assembly=Reactivity"
+    xmlns:cli="clr-namespace:Reactivity.Clients;assembly=Reactivity.Clients"
+    Title="Reactivity ControlPanel" Height="367" Width="578" WindowStartupLocation="CenterScreen" Keyboard.KeyUp="Window_KeyUp">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="65">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/banner.jpg"></ImageBrush>
+            </Grid.Background>
+            <TextBlock FontFamily="Verdana" Margin="10" FontSize="20" FontWeight="Bold" Text="Reactivity"></TextBlock>
+            <TextBlock FontFamily="Verdana" Margin="10,35,10,14" Text="Control Panel"></TextBlock>
+        </Grid>
+
+        <StatusBar Height="23" Name="StatusBar" DockPanel.Dock="Bottom">
+            <StatusBar.Items>
+                <ProgressBar Height="15" HorizontalAlignment="Right" Margin="0,0,5,0" Name="ProgressBar" VerticalAlignment="Bottom" Width="100" Visibility="Hidden" IsIndeterminate="True" />
+            </StatusBar.Items>
+        </StatusBar>
+
+        <TabControl Name="MainTabControl" Margin="10,0,10,10" SelectionChanged="MainTabControl_SelectionChanged">
+            <TabItem Header="Devices">
+                <Grid>
+                    <ListView Name="DeviceListView" MouseDoubleClick="DeviceEditMenuItem_Click">
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="New Device ..." Click="NewDeviceMenuItem_Click"></MenuItem>
+                                <Separator></Separator>
+                                <MenuItem Header="Edit" x:Name="DeviceEditMenuItem" Click="DeviceEditMenuItem_Click"></MenuItem>
+                                <MenuItem Header="Delete" x:Name="DeviceRemoveMenuItem" Click="DeviceRemoveMenuItem_Click"></MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=Name}"/>
+                                <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Path=Description}"/>
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=Status}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+
+            
+            <TabItem Header="Rules">
+                <Grid>
+                    <ListView Name="RuleListView" MouseDoubleClick="RuleEditMenuItem_Click">
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="New Rule ..." Click="NewRuleMenuItem_Click"></MenuItem>
+                                <Separator></Separator>
+                                <MenuItem Header="Edit" x:Name="RuleEditMenuItem" Click="RuleEditMenuItem_Click"></MenuItem>
+                                <MenuItem Header="Delete" x:Name="RuleRemoveMenuItem" Click="RuleRemoveMenuItem_Click"></MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=Name}"/>
+                                <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Path=Description}"/>
+                                <GridViewColumn Header="Precedence" DisplayMemberBinding="{Binding Path=Precedence}"/>
+                                <GridViewColumn Header="Enabled">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox IsChecked="{Binding Path=IsEnabled}" IsHitTestVisible="False"></CheckBox>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=Status}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+           
+            <TabItem Header="Users" >
+                <Grid>
+                    <ListView Name="UserListView" MouseDoubleClick="UserEditMenuItem_Click">
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="New User ..." Click="NewUserMenuItem_Click"></MenuItem>
+                                <Separator></Separator>
+                                <MenuItem Header="Set Password" x:Name="UserSetPasswordMenuItem" Click="UserSetPasswordMenuItem_Click"></MenuItem>
+                                <MenuItem Header="Edit" x:Name="UserEditMenuItem" Click="UserEditMenuItem_Click"></MenuItem>
+                                <MenuItem Header="Delete" x:Name="UserRemoveMenuItem" Click="UserRemoveMenuItem_Click"></MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                    
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Path=ID}"/>
+                                <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Path=Username}"/>
+                                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Path=Name}"/>
+                                <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Path=Description}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Image x:Name="Image" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="200"></Image>
+                </Grid>
+                
+            </TabItem>
+            <TabItem Header="Log">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="100*"/>
+                    </Grid.RowDefinitions>
+                    <ListView Name="LogListView">
+                        <ListView.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Clear Log" x:Name="LogClearMenuItem" Click="LogClearMenuItem_Click"></MenuItem>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Timestamp" DisplayMemberBinding="{Binding Path=Timestamp}"/>
+                                <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Path=Type}"/>
+                                <GridViewColumn Header="Message" DisplayMemberBinding="{Binding Path=Message}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="3" ShowsPreview="True"></GridSplitter>
+                    <TextBox Grid.Row="2" Text="{Binding Path=Message}" DataContext="{Binding ElementName=LogListView, Path=SelectedItem}" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" IsReadOnly="True"></TextBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+    </DockPanel>
+</Window>

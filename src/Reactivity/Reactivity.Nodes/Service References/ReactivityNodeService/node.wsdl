@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://service.reac.tivity.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://service.reac.tivity.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://service.reac.tivity.org/Imports">
+      <xsd:import schemaLocation="http://joedesktop/node.svc?xsd=xsd0" namespace="http://service.reac.tivity.org" />
+      <xsd:import schemaLocation="http://joedesktop/node.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://joedesktop/node.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Reactivity.Objects" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INodeService_SessionNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionNew" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_SessionNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SessionNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_SessionExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionExists" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_SessionExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SessionExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_SessionAbandon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionAbandon" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_SessionKeepAlive_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionKeepAlive" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_NodeEventGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:NodeEventGet" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_NodeEventGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NodeEventGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceRegister" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceGet" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceDeregister_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceDeregister" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceDeregisterAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceDeregisterAll" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceIsRegisterred_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceIsRegisterred" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DeviceIsRegisterred_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceIsRegisterredResponse" />
+  </wsdl:message>
+  <wsdl:message name="INodeService_DataUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataUpload" />
+  </wsdl:message>
+  <wsdl:portType name="INodeService">
+    <wsdl:operation name="SessionNew">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/SessionNew" message="tns:INodeService_SessionNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/SessionNewResponse" message="tns:INodeService_SessionNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionExists">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/SessionExists" message="tns:INodeService_SessionExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/SessionExistsResponse" message="tns:INodeService_SessionExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionAbandon">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/SessionAbandon" message="tns:INodeService_SessionAbandon_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionKeepAlive">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/SessionKeepAlive" message="tns:INodeService_SessionKeepAlive_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NodeEventGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/NodeEventGet" message="tns:INodeService_NodeEventGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/NodeEventGetResponse" message="tns:INodeService_NodeEventGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceRegister">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceRegister" message="tns:INodeService_DeviceRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceRegisterResponse" message="tns:INodeService_DeviceRegister_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceGet" message="tns:INodeService_DeviceGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceGetResponse" message="tns:INodeService_DeviceGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceDeregister">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceDeregister" message="tns:INodeService_DeviceDeregister_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceDeregisterAll">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceDeregisterAll" message="tns:INodeService_DeviceDeregisterAll_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceIsRegisterred">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceIsRegisterred" message="tns:INodeService_DeviceIsRegisterred_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/INodeService/DeviceIsRegisterredResponse" message="tns:INodeService_DeviceIsRegisterred_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataUpload">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/INodeService/DataUpload" message="tns:INodeService_DataUpload_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

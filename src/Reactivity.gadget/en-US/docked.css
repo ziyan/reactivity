@@ -1,0 +1,82 @@
+﻿#config
+{
+	width:120px;
+	padding-top:10px;
+	display:none;
+}
+#progress
+{
+	width:120px;
+	padding-top:10px;
+}
+#progress img
+{
+	margin-bottom:5px;
+}
+.device
+{
+	position:absolute;
+	top: 6px;
+	left: 6px;
+	width: 115px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.device .icon
+{
+	float:left;
+	width: 20px;
+	height:20px;
+}
+
+.device .name
+{
+	font-size:8pt;
+	line-height:100%;
+	width:115px;
+	line-height:140%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+
+}
+.device .data
+{
+	font-size:14pt;
+	font-weight:bold;
+	width:85px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: clip;
+
+}
+
+.device .type
+{
+	display:none;
+}
+.device .description
+{
+	display:none;
+}
+
+#graph_docked
+{
+	display:none;
+}
+.graph_docked
+{
+	overflow:hidden;
+	top:47px;
+	left:9px;
+	width:110px;
+	height:43px;
+	position:absolute;
+}
+
+#footer
+{
+	display:none;
+}

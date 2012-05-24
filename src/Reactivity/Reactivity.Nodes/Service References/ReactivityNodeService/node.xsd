@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Reactivity.Objects" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Reactivity.Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://joedesktop/node.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfNodeEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NodeEvent" nillable="true" type="tns:NodeEvent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNodeEvent" nillable="true" type="tns:ArrayOfNodeEvent" />
+  <xs:complexType name="NodeEvent">
+    <xs:sequence>
+      <xs:element name="_x003C_Data_x003E_k__BackingField" nillable="true" type="tns:Data" />
+      <xs:element name="_x003C_Device_x003E_k__BackingField" nillable="true" type="tns:Device" />
+      <xs:element name="_x003C_Guid_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Timestamp_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="tns:NodeEventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NodeEvent" nillable="true" type="tns:NodeEvent" />
+  <xs:complexType name="Data">
+    <xs:sequence>
+      <xs:element name="_x003C_Device_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Service_x003E_k__BackingField" type="xs:short" />
+      <xs:element name="_x003C_Timestamp_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="tns:DataType" />
+      <xs:element name="_x003C_Value_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Data" nillable="true" type="tns:Data" />
+  <xs:simpleType name="DataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="String" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="Float" />
+      <xs:enumeration value="Int" />
+      <xs:enumeration value="UInt" />
+      <xs:enumeration value="Short" />
+      <xs:enumeration value="UShort" />
+      <xs:enumeration value="Long" />
+      <xs:enumeration value="ULong" />
+      <xs:enumeration value="Byte" />
+      <xs:enumeration value="Bytes" />
+      <xs:enumeration value="Bool" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DataType" nillable="true" type="tns:DataType" />
+  <xs:complexType name="Device">
+    <xs:sequence>
+      <xs:element name="_x003C_Configuration_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Description_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Guid_x003E_k__BackingField" type="ser:guid" />
+      <xs:element name="_x003C_Name_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Profile_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Status_x003E_k__BackingField" type="tns:DeviceStatus" />
+      <xs:element name="_x003C_Type_x003E_k__BackingField" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Device" nillable="true" type="tns:Device" />
+  <xs:simpleType name="DeviceStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Offline" />
+      <xs:enumeration value="Online" />
+      <xs:enumeration value="Paused" />
+      <xs:enumeration value="Error" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DeviceStatus" nillable="true" type="tns:DeviceStatus" />
+  <xs:simpleType name="NodeEventType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DeviceUpdate" />
+      <xs:enumeration value="DeviceDeregister" />
+      <xs:enumeration value="Data" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NodeEventType" nillable="true" type="tns:NodeEventType" />
+  <xs:complexType name="ArrayOfData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Data" nillable="true" type="tns:Data" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfData" nillable="true" type="tns:ArrayOfData" />
+</xs:schema>

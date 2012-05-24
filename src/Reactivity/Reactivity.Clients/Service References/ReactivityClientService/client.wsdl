@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://service.reac.tivity.org" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://service.reac.tivity.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://service.reac.tivity.org/Imports">
+      <xsd:import schemaLocation="http://joedesktop/client.svc?xsd=xsd0" namespace="http://service.reac.tivity.org" />
+      <xsd:import schemaLocation="http://joedesktop/client.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://joedesktop/client.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Reactivity.Objects" />
+      <xsd:import schemaLocation="http://joedesktop/client.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/Message" />
+      <xsd:import schemaLocation="http://joedesktop/client.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Reactivity.Server.Clients" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClientService_SessionNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionNew" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_SessionNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SessionNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_SessionExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionExists" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_SessionExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SessionExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_SessionAbandon_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionAbandon" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_SessionKeepAlive_InputMessage">
+    <wsdl:part name="parameters" element="tns:SessionKeepAlive" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ClientEventGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClientEventGet" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ClientEventGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientEventGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_Subscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Subscribe" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_Subscribe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubscribeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_Unsubscribe_InputMessage">
+    <wsdl:part name="parameters" element="tns:Unsubscribe" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UnsubscribeAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnsubscribeAll" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGetIndex_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGetIndex" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGetIndex_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGetIndexResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGet" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGetStream_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGetStream" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_ResourceGetStream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResourceGetStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserLogin" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserLogout_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserLogout" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserCurrent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserCurrent" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserCurrent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserCurrentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserIsLoggedIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserIsLoggedIn" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserIsLoggedIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserIsLoggedInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserCreate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserCreate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserCreate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserRemove_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserRemove" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserRemove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserList_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserList" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserSetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserSetPassword" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserSetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserSetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserGet" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserGetByUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserGetByUsername" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_UserGetByUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserGetByUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleList_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleList" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RuleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleGet" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RuleGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleCreate_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleCreate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleCreate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RuleCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleRemove_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleRemove" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleRemove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RuleRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RuleUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleChainReload_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleChainReload" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_RuleChainReloadFromDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:RuleChainReloadFromDatabase" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceList" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceGet" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceCreate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceCreate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceCreate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceRemove_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceRemove" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceRemove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DeviceUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeviceUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_DataSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:DataSend" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_StatisticsQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:StatisticsQuery" />
+  </wsdl:message>
+  <wsdl:message name="IClientService_StatisticsQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StatisticsQueryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IClientService">
+    <wsdl:operation name="SessionNew">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/SessionNew" message="tns:IClientService_SessionNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/SessionNewResponse" message="tns:IClientService_SessionNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionExists">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/SessionExists" message="tns:IClientService_SessionExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/SessionExistsResponse" message="tns:IClientService_SessionExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionAbandon">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/SessionAbandon" message="tns:IClientService_SessionAbandon_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionKeepAlive">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/SessionKeepAlive" message="tns:IClientService_SessionKeepAlive_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientEventGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/ClientEventGet" message="tns:IClientService_ClientEventGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/ClientEventGetResponse" message="tns:IClientService_ClientEventGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Subscribe">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/Subscribe" message="tns:IClientService_Subscribe_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/SubscribeResponse" message="tns:IClientService_Subscribe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Unsubscribe">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/Unsubscribe" message="tns:IClientService_Unsubscribe_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnsubscribeAll">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UnsubscribeAll" message="tns:IClientService_UnsubscribeAll_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResourceGetIndex">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGetIndex" message="tns:IClientService_ResourceGetIndex_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGetIndexResponse" message="tns:IClientService_ResourceGetIndex_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResourceGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGet" message="tns:IClientService_ResourceGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGetResponse" message="tns:IClientService_ResourceGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResourceGetStream">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGetStream" message="tns:IClientService_ResourceGetStream_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/ResourceGetStreamResponse" message="tns:IClientService_ResourceGetStream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserLogin">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserLogin" message="tns:IClientService_UserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserLoginResponse" message="tns:IClientService_UserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserLogout">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserLogout" message="tns:IClientService_UserLogout_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCurrent">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserCurrent" message="tns:IClientService_UserCurrent_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserCurrentResponse" message="tns:IClientService_UserCurrent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserIsLoggedIn">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserIsLoggedIn" message="tns:IClientService_UserIsLoggedIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserIsLoggedInResponse" message="tns:IClientService_UserIsLoggedIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserChangePassword">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserChangePassword" message="tns:IClientService_UserChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserChangePasswordResponse" message="tns:IClientService_UserChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserCreate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserCreate" message="tns:IClientService_UserCreate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserCreateResponse" message="tns:IClientService_UserCreate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserRemove">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserRemove" message="tns:IClientService_UserRemove_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserRemoveResponse" message="tns:IClientService_UserRemove_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserList">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserList" message="tns:IClientService_UserList_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserListResponse" message="tns:IClientService_UserList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserUpdate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserUpdate" message="tns:IClientService_UserUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserUpdateResponse" message="tns:IClientService_UserUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserSetPassword">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserSetPassword" message="tns:IClientService_UserSetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserSetPasswordResponse" message="tns:IClientService_UserSetPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserGet" message="tns:IClientService_UserGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserGetResponse" message="tns:IClientService_UserGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserGetByUsername">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/UserGetByUsername" message="tns:IClientService_UserGetByUsername_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/UserGetByUsernameResponse" message="tns:IClientService_UserGetByUsername_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleList">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleList" message="tns:IClientService_RuleList_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/RuleListResponse" message="tns:IClientService_RuleList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleGet" message="tns:IClientService_RuleGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/RuleGetResponse" message="tns:IClientService_RuleGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleCreate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleCreate" message="tns:IClientService_RuleCreate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/RuleCreateResponse" message="tns:IClientService_RuleCreate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleRemove">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleRemove" message="tns:IClientService_RuleRemove_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/RuleRemoveResponse" message="tns:IClientService_RuleRemove_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleUpdate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleUpdate" message="tns:IClientService_RuleUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/RuleUpdateResponse" message="tns:IClientService_RuleUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleChainReload">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleChainReload" message="tns:IClientService_RuleChainReload_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RuleChainReloadFromDatabase">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/RuleChainReloadFromDatabase" message="tns:IClientService_RuleChainReloadFromDatabase_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceList">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceList" message="tns:IClientService_DeviceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceListResponse" message="tns:IClientService_DeviceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceGet">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceGet" message="tns:IClientService_DeviceGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceGetResponse" message="tns:IClientService_DeviceGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceCreate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceCreate" message="tns:IClientService_DeviceCreate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceCreateResponse" message="tns:IClientService_DeviceCreate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceRemove">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceRemove" message="tns:IClientService_DeviceRemove_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceRemoveResponse" message="tns:IClientService_DeviceRemove_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeviceUpdate">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceUpdate" message="tns:IClientService_DeviceUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/DeviceUpdateResponse" message="tns:IClientService_DeviceUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DataSend">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/DataSend" message="tns:IClientService_DataSend_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StatisticsQuery">
+      <wsdl:input wsaw:Action="http://service.reac.tivity.org/IClientService/StatisticsQuery" message="tns:IClientService_StatisticsQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://service.reac.tivity.org/IClientService/StatisticsQueryResponse" message="tns:IClientService_StatisticsQuery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

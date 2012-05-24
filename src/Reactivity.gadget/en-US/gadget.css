@@ -1,0 +1,32 @@
+﻿body{
+background:#ccc;
+background-repeat:no-repeat;
+background-repeat:no-repeat;
+color:white;
+margin: 0;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 8pt;
+overflow:hidden;
+}
+img{border:none;}
+.device {
+	display:none;
+	text-align:right;
+}
+.graph {
+	display:none;
+}
+
+#control{
+	float:right;
+}
+#control_ac {
+	display:none;
+}
+#control_computer {
+	display:none;
+}
+#status {
+	float:left;
+	line-height: 20px;
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+	<name>Reactivity</name>
+	<namespace>reac.tivity.org</namespace>
+	<version>1.0</version>
+	<author name="sparxlive.com">
+		<info url="http://sparxlive.com" />
+		<logo src="sparx.png" />
+	</author>
+	<copyright>© 2008 sparxlive.com</copyright>
+	<description>Monitor and control your Reactivity network from your sidebar.</description>
+	<icons>
+		<icon height="120" width="120" src="reactivity.png" />
+	</icons>
+	<hosts>
+		<host name="sidebar">
+			<base type="HTML" apiVersion="1.0.0.0" src="gadget.html" />
+			<permissions>Full</permissions>
+			<platform minPlatformVersion="1.0"/>
+			<defaultImage src="drag.png" />
+		</host>
+	</hosts>
+</gadget>

@@ -1,0 +1,114 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<title>Reactivity</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="gadget.css"/>
+<link id="undocked" type="text/css" rel="stylesheet" href="undocked.css"/>
+<link id="docked" type="text/css" rel="stylesheet" href="docked.css"/>
+<script type="text/javascript" src="reactivity.js"></script>
+<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="livechart.js"></script>
+<script type="text/javascript" src="statschart.js"></script>
+<script type="text/javascript" src="gadget.js"></script>
+<style type="text/css">
+v\:* { behavior: url(#default#VML);}
+</style>
+</head>
+<body onload="Gadget.onLoad();" onunload="Gadget.onUnload();" scroll="no" onmousewheel="">
+<g:background id="bg" style="position:absolute;z-index:-1;"/>
+<center>
+<div id="config"><img alt="" src="../images/reactivity.png"/><br/>Please configure me.</div>
+<div id="progress"><img src="../images/loading_ball.gif" alt="Loading..."/><br/>&nbsp;&nbsp;Loading ...</div>
+</center>
+<div id="device" class="device">
+<img id="device_icon" class="icon"/>
+<div id="device_data" class="data">98.239</div>
+<div id="device_name" class="name"></div>
+<div id="device_type" class="type"></div>
+<div id="device_description" class="description"></div>
+</div>
+<div id="graph">
+<div id="graph_docked">
+<v:shape class="graph_docked" filled="false"
+strokecolor="#2F4F4F" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path=" m 50,200 l 50,0  m 100,200 l 100,0  m 150,200 l 150,0  m 200,200 l 200,0  m 250,200 l 250,0"/>
+<v:shape class="graph_docked" filled="false"
+strokecolor="#2F4F4F" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path=" m 0,50 l 300,50  m 0,100 l 300,100  m 0,150 l 300,150" />
+<v:shape class="graph_docked" filled="false"
+strokecolor="#778899" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path="m 0,200 l 300,200 l 300,0 l 0,0 l 0,200" />
+<v:shape id="graph_docked_1" class="graph_docked" filled="false"
+strokecolor="#64FF00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_docked_2" class="graph_docked" filled="false"
+strokecolor="#FFFC00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_docked_3" class="graph_docked" filled="false"
+strokecolor="#5C95F1" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_docked_4" class="graph_docked" filled="false"
+strokecolor="#64FF00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+</div>
+<div id="graph_undocked">
+<v:shape class="graph_undocked" filled="false"
+strokecolor="#2F4F4F" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path=" m 25,200 l 25,0 m 50,200 l 50,0 m 75,200 l 75,0 m 100,200 l 100,0 m 125,200 l 125,0 m 150,200 l 150,0 m 175,200 l 175,0 m 200,200 l 200,0 m 225,200 l 225,0 m 250,200 l 250,0 m 275,200 l 275,0"/>
+<v:shape class="graph_undocked" filled="false"
+strokecolor="#2F4F4F" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path="m 0,25 l 300,25 m 0,50 l 300,50 m 0,75 l 300,75 m 0,100 l 300,100 m 0,125 l 300,125 m 0,150 l 300,150 m 0,175 l 300,175" />
+<v:shape class="graph_undocked" filled="false"
+strokecolor="#778899" strokeweight="1pt"
+coordorigin="0 0" coordsize="300 200"
+path="m 0,200 l 300,200 l 300,0 l 0,0 l 0,200" />
+<v:shape id="graph_undocked_1" class="graph_undocked" filled="false"
+strokecolor="#64FF00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_undocked_2" class="graph_undocked" filled="false"
+strokecolor="#FFFC00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_undocked_3" class="graph_undocked" filled="false"
+strokecolor="#5C95F1" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+<v:shape id="graph_undocked_4" class="graph_undocked" filled="false"
+strokecolor="#64FF00" strokeweight="1pt"
+coordorigin="0 0" coordsize="30000 20000"/>
+</div>
+<div id="footer">
+<div id="status"></div>
+<div id="control">
+<select id="control_computer" onchange="Gadget.onControlComputer()">
+<option value="">Actions</option>
+<optgroup label="Normal">
+<option value="1">Logoff</option>
+<option value="2">Reboot</option>
+<option value="3">Suspend</option>
+<option value="4">Hibernate</option>
+<option value="5">Shutdown</option>
+<option value="6">Power Off</option>
+</optgroup>
+<optgroup label="Forced">
+<option value="-1">Logoff</option>
+<option value="-2">Reboot</option>
+<option value="-3">Suspend</option>
+<option value="-4">Hibernate</option>
+<option value="-5">Shutdown</option>
+<option value="-6">Power Off</option>
+</optgroup>
+</select>
+<select id="control_ac" onchange="Gadget.onControlAC()">
+<option value="">Actions</option>
+<option value="on">On</option>
+<option value="off">Off</option>
+</select>
+</div>
+</div>
+</div>
+</body>
+</html>

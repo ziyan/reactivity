@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" Class="Reactivity.Web.Handler.User.Logout" %>

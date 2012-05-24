@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reactivity Settings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="settings.css"/>
+<script type="text/javascript" src="reactivity.js"></script>
+<script type="text/javascript" src="util.js"></script>
+<script type="text/javascript" src="settings.js"></script>
+</head>
+<body onload="Settings.onLoad();" onunload="Settings.onUnload();">
+<div id="login" style="display:none;">
+<p>Service Uri:<br/>
+<input id="service_uri" type="text" value="http://localhost/client.svc"/></p>
+<p>Username:<br/>
+<input id="username" type="text"/></p>
+<p>Password:<br/>
+<input id="password" name="password" type="password"/></p>
+<p><button onclick="Settings.login();">Login</button> <span id="message"></span></p>
+</div>
+<div id="progress">
+<img src="../images/loading_bar.gif" alt="Loading..."/>
+</div>
+<div id="settings" style="display:none;">
+<p><span id="info"></span><br/><a href="#" onclick="Settings.logout();return false;">Click here to logout.</a></p>
+<p>Select a device to monitor:<br/>
+<select id="device"></select></p>
+<p>Choose chart type:<br/>
+<select id="type">
+<option value="live">Live Data</option>
+<option value="15m">15 minutes trend</option>
+<option value="30m">30 minutes trend</option>
+<option value="1h">1 hour trend</option>
+<option value="6h">6 hours trend</option>
+<option value="12h">12 hours trend</option>
+<option value="1d">1 day trend</option>
+<option value="3d">3 days trend</option>
+<option value="1w">1 week trend</option>
+<option value="2w">2 weeks trend</option>
+<option value="1m">1 month trend</option>
+</select></p>
+</div>
+</body>
+</html>

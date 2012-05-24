@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3e6fbbcd-c225-493f-8670-ce16036d26aa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://service.reac.tivity.org/node.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="node.xsd" MetadataType="Schema" ID="43fc55bd-ed92-418a-a621-55591a488d20" SourceId="1" SourceUrl="http://joedesktop/node.svc?xsd=xsd2" />
+    <MetadataFile FileName="node.disco" MetadataType="Disco" ID="9f8c2725-cb2e-4ae1-ae0b-beb0bfa35970" SourceId="1" SourceUrl="http://joedesktop/node.svc?disco" />
+    <MetadataFile FileName="NodeService2.wsdl" MetadataType="Wsdl" ID="19b8dbbd-7440-493c-8c5e-b9f9ddc757ac" SourceId="1" SourceUrl="http://joedesktop/node.svc?wsdl" />
+    <MetadataFile FileName="node1.xsd" MetadataType="Schema" ID="b46f64c8-a140-4959-9989-6e2f0e188e87" SourceId="1" SourceUrl="http://joedesktop/node.svc?xsd=xsd1" />
+    <MetadataFile FileName="node2.xsd" MetadataType="Schema" ID="4821215c-d9e3-47ab-ab34-81b1c2164b5e" SourceId="1" SourceUrl="http://joedesktop/node.svc?xsd=xsd0" />
+    <MetadataFile FileName="node.wsdl" MetadataType="Wsdl" ID="350c0f20-09f1-4369-bb90-ce15291ef30e" SourceId="1" SourceUrl="http://joedesktop/node.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

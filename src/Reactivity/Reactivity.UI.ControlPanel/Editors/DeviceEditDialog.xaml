@@ -1,0 +1,121 @@
+﻿<Window x:Class="Reactivity.UI.ControlPanel.Editors.DeviceEditDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:objs="clr-namespace:Reactivity.Objects;assembly=Reactivity"
+    Title="Device Editing" Height="500" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Keyboard.KeyUp="Window_KeyUp">
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="65">
+            <Grid.Background>
+                <ImageBrush ImageSource="../Resources/banner.jpg"></ImageBrush>
+            </Grid.Background>
+            <TextBlock FontFamily="Verdana" Margin="10" FontSize="20" FontWeight="Bold" Text="{Binding ElementName=DeviceName, Path=Text}"></TextBlock>
+            <TextBlock FontFamily="Verdana" Margin="10,35,10,14" Text="{Binding ElementName=DeviceDescription, Path=Text}"></TextBlock>
+        </Grid>
+        <StackPanel Margin="10" DockPanel.Dock="Bottom" Height="30" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="CancelButton" Margin="4" Width="80" Click="CancelButton_Click">Cancel</Button>
+            <Button x:Name="OKButton" Margin="4" Width="80" FontWeight="Bold" Click="OKButton_Click">OK</Button>
+        </StackPanel>
+        
+        <TabControl Margin="10,0">
+            <TabItem Header="General">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label HorizontalContentAlignment="Right" Margin="3">GUID:</Label>
+                    <Label Grid.Row="1" HorizontalContentAlignment="Right" Margin="3">Name:</Label>
+                    <Label Grid.Row="2" HorizontalContentAlignment="Right" Margin="3">Type:</Label>
+                    <Label Grid.Row="3" HorizontalContentAlignment="Right" Margin="3">Description:</Label>
+                    <TextBox Grid.Column="1" Margin="5" x:Name="DeviceGuid" Text="6385c081-8368-403c-96bf-c81c90100072"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="5" x:Name="DeviceName" Text="&lt;New Device&gt;"></TextBox>
+                    <ComboBox Grid.Row="2" Grid.Column="1" Margin="5, 7" x:Name="DeviceType" IsEditable="True">
+                    </ComboBox>
+                    <TextBox Grid.Row="3" Grid.Column="1" Margin="5" x:Name="DeviceDescription" Text="" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Profile">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label HorizontalContentAlignment="Right" Margin="3">Building:</Label>
+                    <Label Grid.Row="1" HorizontalContentAlignment="Right" Margin="3">Floor:</Label>
+                    <Label Grid.Row="2" HorizontalContentAlignment="Right" Margin="3">Position (X,Y,Z):</Label>
+                    <ComboBox x:Name="DeviceProfileBuilding" Grid.Column="1" Margin="5" SelectionChanged="DeviceProfileBuilding_SelectionChanged">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type objs:Building}">
+                                <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <ComboBox x:Name="DeviceProfileFloor" Grid.Row="1" Grid.Column="1" Margin="5" IsEnabled="False" SelectionChanged="DeviceProfileFloor_SelectionChanged">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type objs:Floor}">
+                                <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                        <TextBox x:Name="DeviceProfileX" Width="70" Margin="5" TextChanged="DeviceProfile_TextChanged"></TextBox>
+                        <TextBox x:Name="DeviceProfileY" Width="70" Margin="5" TextChanged="DeviceProfile_TextChanged"></TextBox>
+                        <TextBox x:Name="DeviceProfileZ" Width="70" Margin="5" TextChanged="DeviceProfile_TextChanged"></TextBox>
+                    </StackPanel>
+
+                    <Border Grid.Row="3" Grid.ColumnSpan="2" Margin="5" BorderThickness="1" BorderBrush="LightBlue" x:Name="DeviceProfileBorder" Background="#235090">
+                        <ScrollViewer x:Name="DeviceProfileScrollViewer" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Control.MouseDoubleClick="DeviceProfileScrollViewer_MouseDoubleClick" SizeChanged="DeviceProfileScrollViewer_SizeChanged">
+                            <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+                                <Viewbox Stretch="None" x:Name="DeviceProfileViewBox"/>
+                                <Image x:Name="DeviceProfileViewBoxPointer" VerticalAlignment="Top" HorizontalAlignment="Left" Source="../Resources/pointer.ico" Width="16" Height="16" />
+                            </Grid>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Configuration">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="35" />
+                    </Grid.RowDefinitions>
+                    <ListView Name="ConfigurationListView" Grid.ColumnSpan="2" SelectionChanged="ConfigurationListView_SelectionChanged">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Key" DisplayMemberBinding="{Binding Path=Key}"/>
+                                <GridViewColumn Header="Value" DisplayMemberBinding="{Binding Path=Value}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Grid.Row="1" HorizontalContentAlignment="Right" Margin="3">Key:</Label>
+                    <Label Grid.Row="2" HorizontalContentAlignment="Right" Margin="3">Value:</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="5" x:Name="ConfigurationKey" Text=""></TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="1" Margin="5" x:Name="ConfigurationValue" Text="" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+                    <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button x:Name="ConfigurationAddButton" Margin="3" Padding="5,0" Click="ConfigurationAddButton_Click">Add</Button>
+                        <Button x:Name="ConfigurationRemoveButton" Margin="3" Padding="5,0" IsEnabled="False" Click="ConfigurationRemoveButton_Click">Remove</Button>
+                        <Button x:Name="ConfigurationSaveButton" Margin="3" Padding="5,0" IsEnabled="False" Click="ConfigurationSaveButton_Click">Save</Button>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
