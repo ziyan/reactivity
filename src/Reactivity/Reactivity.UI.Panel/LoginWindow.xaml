@@ -1,0 +1,37 @@
+﻿<Window x:Class="Reactivity.UI.Panel.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Chart="clr-namespace:Reactivity.UI.Panel.Chart;assembly=Reactivity.UI.Panel.Chart"
+    Title="Reactivity" Height="340" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"
+    Loaded="Window_Loaded" Closed="Window_Closed"><!-- KeyDown="Window_KeyDown" StateChanged="Window_StateChanged" Closed="Window_Closed">  -->
+    <Window.Resources>
+        <Storyboard x:Key="InitialStoryboard">
+            <DoubleAnimation Storyboard.TargetName="LoginGrid" Storyboard.TargetProperty="Opacity"
+                                 From="0" To="1" Duration="0:0:0.5" AccelerationRatio="0.1"></DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource InitialStoryboard}"></BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid x:Name="RootGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/background.jpg"/>
+        </Grid.Background>
+        <Grid x:Name="LoginGrid" Opacity="1" Margin="20,20,20,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="170"/>
+            </Grid.RowDefinitions>
+            <Image Source="Resources/loginLogo.png" Grid.Row="0" />
+            <ComboBox GotFocus="ServerBox_GotFocus" LostFocus="ServerBox_LostFocus" Height="23" Grid.Row="1" Margin="0,10,0,0" Name="ServerBox" VerticalAlignment="Top" IsEditable="True" Opacity="0.7" Text="" SelectedIndex="-1" KeyDown="ServerBox_KeyDown">
+                <ComboBoxItem>http://localhost/client.svc</ComboBoxItem>
+            </ComboBox>
+            <TextBox GotFocus="UsernameBox_GotFocus" LostFocus="UsernameBox_LostFocus" Margin="0,45,0,0" Height="23" Name="UsernameBox" VerticalAlignment="Top" Opacity="0.7" BorderThickness="1" Grid.Row="1" KeyDown="UsernameBox_KeyDown"></TextBox>
+            <PasswordBox Margin="0,80,0,0" Name="PasswordBox" Opacity="0.7" BorderThickness="1" Height="23" VerticalAlignment="Top" GotFocus="PasswordBox_GotFocus" Grid.Row="1" KeyDown="PasswordBox_KeyDown"/>
+            <ProgressBar Grid.Row="1" Background="White" Height="20" Margin="0,120,0,0" Name="progress" VerticalAlignment="Top" IsIndeterminate="True" Opacity="0.7"/>
+            <Button Grid.Row="1" Height="30" Width="100" Margin="0,90,0,0" Name="LoginButton" HorizontalAlignment="Center" Click="LoginButton_Click" Opacity="0.7" FontSize="16">Login</Button>        
+        </Grid>
+    </Grid>
+</Window>

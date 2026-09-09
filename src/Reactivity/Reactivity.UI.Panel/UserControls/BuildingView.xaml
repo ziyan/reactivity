@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.UserControls.BuildingView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Reactivity.UI.Panel.UserControls"             
+    xmlns:Tools3D="clr-namespace:Reactivity.UI.Tools3D;assembly=Reactivity.UI.Tools3D"
+    xmlns:Chart="clr-namespace:Reactivity.UI.Panel.Chart;assembly=Reactivity.UI.Panel.Chart"
+    Margin="0,0,0,0" Width="Auto" Height="Auto" MouseDown="UserControl_MouseDown" MouseMove="UserControl_MouseMove"
+    Loaded="UserControl_Loaded">
+    <!--MouseDoubleClick="UserControl_MouseDoubleClick">-->
+    <UserControl.Resources >
+        <Storyboard x:Key="FadeIn">
+            <DoubleAnimation Storyboard.TargetName="BuildingViewGrid" Storyboard.TargetProperty="(Grid.Opacity)"
+                                         From="0" To="1" AccelerationRatio="0.05" Duration="0:0:0.8" />
+        </Storyboard>
+        <Storyboard x:Key="FadeOut">
+            <DoubleAnimation Storyboard.TargetName="BuildingViewGrid" Storyboard.TargetProperty="(Grid.Opacity)"
+                             From="1" To="0" AccelerationRatio="0.05" Duration="0:0:0.8" />
+        </Storyboard>
+        <Storyboard x:Key="CameraSwitch">
+        </Storyboard>
+        <ControlTemplate x:Key="BallButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#b55230" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#f3fe3d" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="TemperatureButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#b55230" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#f69373" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="LuminosityButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#e5ae14" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#ffd356" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ACButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#92cd00" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#d6ff71" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="MotionButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#3073b5" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#70b6fa" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="RFIDButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#9b1084" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#ff26dc" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ComputerButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#b3b1ab" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#d4d3cf" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="AccelerationButton" TargetType="Button">
+            <Rectangle x:Name="rec" Width="100" Height="100" Fill="#00d0ac" />
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter TargetName="rec" Property="Fill" Value="#6effe6" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </UserControl.Resources>
+
+    
+    <Grid x:Name="BuildingViewGrid">
+        <Tools3D:Interactive3DDecorator>
+            <Viewport3D x:Name="port3d"> 
+                <!--
+                <Viewport2DVisual3D>                
+                    <Viewport2DVisual3D.Geometry>
+                        <MeshGeometry3D Positions="-1,1,0 -1,-1,0 1,-1,0 1,1,0"
+                                TextureCoordinates="0,0 0,1 1,1 1,0" TriangleIndices="0 1 2 0 2 3"/>
+                    </Viewport2DVisual3D.Geometry>
+                    <Viewport2DVisual3D.Material>
+                        <DiffuseMaterial Viewport2DVisual3D.IsVisualHostMaterial="True" Brush="White"/>
+                    </Viewport2DVisual3D.Material>                   
+                    <Viewport2DVisual3D.Visual>                    
+                        <Image x:Name="img0" Source="../Resources/clouds_wheat_cc.jpg" Opacity="0.5"/>
+                    </Viewport2DVisual3D.Visual>
+                </Viewport2DVisual3D>
+                -->
+                
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <Model3DGroup>
+                            <Model3DGroup.Children>
+                                <DirectionalLight 
+                                    Color="#FFFFFFFF" 
+                                    Direction="0,0,-10"/>
+                                <DirectionalLight                                     
+                                    Color="#FFFFFFFF" 
+                                    Direction="0,0,1"/>
+                            </Model3DGroup.Children>
+                        </Model3DGroup>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>            
+                <Viewport3D.Camera>                
+                    <PerspectiveCamera
+                        x:Name="camera"
+                        LookDirection = "-2, -2, -1.5" 
+                        UpDirection = "0, 0, 1"
+                        Position = "2, 2, 2"
+                        FieldOfView = "50">
+                    </PerspectiveCamera>
+                </Viewport3D.Camera>
+            </Viewport3D>
+        </Tools3D:Interactive3DDecorator>   
+        <Grid x:Name="ChartGrid">
+            <Button x:Name="fullView" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,20,0" Visibility="Collapsed" Click="fullView_Click">Back to Full View</Button> 
+            <TextBox Name="textBox1" Height="50" VerticalAlignment="Top" Visibility="Collapsed" Margin="135.755,0,180.054,0"/>
+            <!--<ProgressBar Name="buildingLoadProgress" Height="20" Width="300" VerticalAlignment="Center"  HorizontalAlignment="Center" Background="Transparent" Visibility="Collapsed" BorderBrush="White" BorderThickness="2" />-->
+            <local:LoadingWidget x:Name="LoadProgress" HorizontalAlignment="Center" Background="Transparent" Visibility="Collapsed" />
+        </Grid>        
+    </Grid>
+</UserControl>

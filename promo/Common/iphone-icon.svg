@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="123.8947"
+   height="107.01989"
+   id="svg4392"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="iphone-icon.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4394">
+    <linearGradient
+       id="linearGradient5461">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5463" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5465" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2667">
+      <stop
+         id="stop2669"
+         offset="0.0000000"
+         style="stop-color:#ffffff;stop-opacity:1.0000000;" />
+      <stop
+         id="stop2671"
+         offset="1.0000000"
+         style="stop-color:#fcfcff;stop-opacity:0.0000000;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4916">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4918" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4920" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4400" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2667"
+       id="linearGradient5445"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.8125879,-0.5904457,0.4279955,2.0387558,73.036134,193.03963)"
+       x1="11.492236"
+       y1="1.6537577"
+       x2="17.199417"
+       y2="26.729263" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2667"
+       id="radialGradient5453"
+       cx="101.23146"
+       cy="208.42671"
+       fx="101.23146"
+       fy="208.42671"
+       r="42.722206"
+       gradientTransform="matrix(1.814363,-0.3284221,0.2006402,1.1084335,-122.72154,6.0546549)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5461"
+       id="radialGradient5459"
+       cx="143.6942"
+       cy="276.56503"
+       fx="143.6942"
+       fy="276.56503"
+       r="48.739861"
+       gradientTransform="matrix(0.7564767,-2.1186033e-7,5.223965e-8,0.1865289,34.992874,224.97771)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="76.44377"
+     inkscape:cy="44.480374"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="853"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata4397">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-94.410923,-192.06443)">
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.47596154;fill:url(#radialGradient5459);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path5455"
+       sodipodi:cx="143.6942"
+       sodipodi:cy="276.56503"
+       sodipodi:rx="48.739861"
+       sodipodi:ry="9.0913725"
+       d="M 192.43406,276.56503 A 48.739861,9.0913725 0 1 1 94.954338,276.56503 A 48.739861,9.0913725 0 1 1 192.43406,276.56503 z"
+       transform="matrix(1.2701599,-0.242497,0.242497,1.2701599,-93.222526,-33.873517)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#545454;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 110.67087,206.51665 L 175.96711,192.56802 C 177.92186,192.46375 181.13344,194.65052 182.93414,196.27044 L 191.32566,263.495 C 191.40761,265.29546 190.1194,267.47325 188.06639,267.934 L 123.11247,289.08035 C 120.76969,287.72774 117.48474,286.01716 117.48474,283.70382 L 105.89637,210.70312 C 105.68815,208.39758 108.36534,206.72487 110.67087,206.51665 z"
+       id="path5430"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="opacity:0.74038463;fill:url(#radialGradient5453);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 109.83158,206.36001 L 176.55639,192.50067 C 178.51114,192.3964 180.29415,194.31531 182.09485,195.93523 L 190.48637,263.15979 C 190.56832,264.96025 189.28011,267.13804 187.2271,267.59879 L 122.27318,288.74514 C 119.9304,287.39253 116.64545,285.68195 116.64545,283.36861 L 105.05708,210.36791 C 104.84886,208.06237 107.52605,206.56823 109.83158,206.36001 z"
+       id="path5447"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#787878;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 113.94719,208.41865 L 179.24343,194.47002 C 181.19818,194.36575 183.65083,196.15073 183.84439,198.35101 L 194.60198,265.397 C 194.68393,267.19746 193.39572,269.37525 191.34271,269.836 L 124.78165,289.41985 C 122.73598,289.41985 120.76106,287.91916 120.76106,285.60582 L 109.17269,212.60512 C 108.96447,210.29958 111.64166,208.62687 113.94719,208.41865 z"
+       id="rect4402"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#73d216;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 126.07143,278.07647 C 126.07156,278.0764 123.05824,215.83306 125.17857,213.79075 C 128.85699,210.24767 133.75,219.68361 138.03571,230.04076 C 142.32143,240.3979 151.25,268.96933 155.35714,260.75504 C 159.46429,252.54076 154.64286,204.32647 161.42857,208.25504 C 168.21429,212.18361 172.67857,237.8979 176.25,239.1479 C 179.82143,240.3979 183.03571,217.18361 183.03571,217.18361"
+       id="path5275"
+       sodipodi:nodetypes="csssssc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#4b83d5;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 116.42008,230.60309 C 116.42008,230.60309 128.41564,260.27632 131.82491,255.8569 C 135.23417,251.43748 136.55885,220.4669 143.3154,219.74395 C 151.5165,218.86644 167.32887,276.54421 172.91094,271.46722 C 178.72953,266.17512 174.12505,197.8994 174.12505,197.8994"
+       id="path5381"
+       sodipodi:nodetypes="csssc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+    <path
+       style="opacity:0.5817308;fill:url(#linearGradient5445);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 178.91004,194.97825 L 114.39284,208.71784 C 112.17227,208.91839 109.58722,210.53046 109.78778,212.75103 L 114.87442,244.836 C 147.45464,234.5603 141.99486,220.30186 184.02678,203.07474 L 183.33452,198.71046 C 183.14809,196.59126 180.79277,194.87783 178.91004,194.97825 z"
+       id="path5432"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\reactivity-iphone-icon.png"
+       inkscape:export-xdpi="181.64857"
+       inkscape:export-ydpi="181.64857" />
+  </g>
+</svg>

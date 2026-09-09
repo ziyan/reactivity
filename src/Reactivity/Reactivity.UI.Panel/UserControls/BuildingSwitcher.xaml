@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.UserControls.BuildingSwitcher"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="180" Width="150" Loaded="Initialize">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="SelectedBackgroundBrush" Color="Transparent" />
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+            <Setter Property="TextBlock.FontSize" Value="13"/>
+        </Style>
+        
+        <!--<Style TargetType="{x:Type ComboBox}">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+            <Setter Property="TextBlock.FontSize" Value="13"/>
+        </Style>-->
+        <Style x:Key="{x:Type ComboBoxItem}" TargetType="ComboBoxItem">            
+            <Setter Property="TextBlock.FontSize" Value="13.5"/>
+            
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="OverridesDefaultStyle" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBoxItem">
+                        <Border 
+                              Name="Border"
+                              Padding="2"
+                              SnapsToDevicePixels="true">
+                            <ContentPresenter />
+                        </Border>                        
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsHighlighted" Value="true">
+                                <Setter TargetName="Border" Property="Background" Value="{StaticResource SelectedBackgroundBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Name="RootGrid" Margin="5,5,5,5">  
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="116*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+
+        <Border BorderBrush="White" BorderThickness="2" CornerRadius="5" Grid.RowSpan="2">
+            <Border.Background>
+                <SolidColorBrush Opacity="0.7" Color="#003262" />
+            </Border.Background>
+        </Border>
+        
+        <!--<Button Name="previous" Grid.Column="0" Grid.RowSpan="2" Click="previous_Click">&lt;</Button>
+        <Button Name="next" Grid.Column="2" Grid.RowSpan="2" Click="next_Click">&gt;</Button>       
+        <TextBox Name="buildingName" Grid.Column="1" Grid.Row="1" Margin="0,0,5,0" TextAlignment="Center" BorderThickness="0" Background="Transparent" Visibility="Collapsed"></TextBox>-->
+        <Image Name="buildingImage" Grid.Column="1" Grid.Row="0" Margin="7" Width="Auto" Height="Auto" Stretch="Uniform" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <ComboBox Name="buildingSelection" SelectionChanged="buildingSelection_SelectionChanged" Grid.Column="1" Grid.Row="1" Margin="5,0,5,5"/>
+    </Grid>
+</UserControl>

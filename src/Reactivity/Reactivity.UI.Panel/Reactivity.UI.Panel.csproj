@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{787B9B08-7D1E-4978-B300-1C4C05316CB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reactivity.UI.Panel</RootNamespace>
+    <AssemblyName>Reactivity.UI.Panel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceDataSources\LiveDataSource.cs" />
+    <Compile Include="DeviceDataSources\RandomLiveDataSource.cs" />
+    <Compile Include="DeviceDataSources\SerialDriver.cs" />
+    <Compile Include="DeviceDataSources\SubscriptionDataSource.cs" />
+    <Compile Include="UserControls\LoadingWidget.xaml.cs">
+      <DependentUpon>LoadingWidget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPanel.xaml.cs">
+      <DependentUpon>MainPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControls\BuildingSwitcher.xaml.cs">
+      <DependentUpon>BuildingSwitcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BuildingView.xaml.cs">
+      <DependentUpon>BuildingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DeviceDetail.xaml.cs">
+      <DependentUpon>DeviceDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LiveChart.xaml.cs">
+      <DependentUpon>LiveChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\_DeviceDetail.xaml.cs">
+      <DependentUpon>_DeviceDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\clouds_wheat_cc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\reactivityLogoColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Service Icons\humidity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Service Icons\luminosity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Service Icons\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="UserControls\LoadingWidget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\BuildingSwitcher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\BuildingView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\DeviceDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LiveChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\_DeviceDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoginWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reactivity.Clients\Reactivity.Clients.csproj">
+      <Project>{937C2AC8-5378-4CA5-8BB6-215C0463CF9F}</Project>
+      <Name>Reactivity.Clients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity.UI.Panel.Chart\Reactivity.UI.Panel.Chart.csproj">
+      <Project>{A5F04193-910A-435C-B43F-B21B0C734D3F}</Project>
+      <Name>Reactivity.UI.Panel.Chart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity.UI.Panel.Swordfish\Reactivity.UI.Panel.Swordfish.csproj">
+      <Project>{455B0C11-236A-4A4E-956F-1A3E41B7260B}</Project>
+      <Name>Reactivity.UI.Panel.Swordfish</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity.UI.Panel.TimeChart\Reactivity.UI.Panel.TimeChart.csproj">
+      <Project>{7E9A6F43-65FF-4943-B081-F156BA0D9A45}</Project>
+      <Name>Reactivity.UI.Panel.TimeChart</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity.UI.Tools3D\Reactivity.UI.Tools3D.csproj">
+      <Project>{E2EECC6E-939E-43F7-9FD1-8B31E01A2227}</Project>
+      <Name>Reactivity.UI.Tools3D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity.UI\Reactivity.UI.csproj">
+      <Project>{F108D585-06D0-4E69-9CB1-C0E4F465D951}</Project>
+      <Name>Reactivity.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reactivity\Reactivity.csproj">
+      <Project>{9F49DFFC-6712-4ACE-ABF6-CA150B821B5C}</Project>
+      <Name>Reactivity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\loginLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\liveChartIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SensorIcons\ac-node.png" />
+    <Resource Include="Resources\SensorIcons\acceleration.png" />
+    <Resource Include="Resources\SensorIcons\computer-node.png" />
+    <Resource Include="Resources\SensorIcons\luminosity.png" />
+    <Resource Include="Resources\SensorIcons\motion.png" />
+    <Resource Include="Resources\SensorIcons\rfid.png" />
+    <Resource Include="Resources\SensorIcons\temperature.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="421.0799"
+   height="352.27054"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="sparxLogo.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="829.56114"
+     inkscape:cy="102.53998"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="853"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-180.2377,-265.74493)">
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2383"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,412.4524,248.95661)" />
+    <text
+       xml:space="preserve"
+       style="font-size:119.49964905px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="175.59837"
+       y="613.95288"
+       id="text3164"><tspan
+         sodipodi:role="line"
+         id="tspan3166"
+         x="175.59837"
+         y="613.95288">SPARX</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3164"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,448.49427,233.79363)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3166"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,449.30696,275.13513)" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.98551941px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="180.45541"
+       y="519.98492"
+       id="text3174"><tspan
+         sodipodi:role="line"
+         id="tspan3176"
+         x="180.45541"
+         y="519.98492">Team</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3197"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,412.07367,38.44414)" />
+    <text
+       xml:space="preserve"
+       style="font-size:119.49964905px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="175.21965"
+       y="403.44052"
+       id="text3199"><tspan
+         sodipodi:role="line"
+         id="tspan3201"
+         x="175.21965"
+         y="403.44052">SPARX</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3203"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,448.11554,23.281158)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3205"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="16.115072"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9634954"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.78485,492.36217 239.50535,479.25348 238.11873,478.67913 C 236.73212,478.10477 225.14392,485.05506 224.08266,483.99379 C 223.02139,482.93253 229.97167,471.34432 229.39732,469.95771 C 228.82297,468.5711 215.71428,465.2916 215.71428,463.79074 C 215.71428,462.28988 228.82297,459.01038 229.39732,457.62377 C 229.97167,456.23716 223.02139,444.64896 224.08265,443.58769 C 225.14392,442.52642 236.73212,449.47671 238.11873,448.90236 C 239.50535,448.328 242.78485,435.21931 244.2857,435.21931 C 245.78656,435.21931 249.06607,448.328 250.45268,448.90236 C 251.83929,449.47671 263.42749,442.52642 264.48876,443.58769 C 265.55002,444.64896 258.59974,456.23716 259.17409,457.62377 C 259.74844,459.01038 272.85713,462.28988 272.85713,463.79074 C 272.85713,465.2916 259.74844,468.5711 259.17409,469.95771 C 258.59974,471.34432 265.55002,482.93252 264.48876,483.99379 C 263.42749,485.05506 251.83929,478.10477 250.45268,478.67913 C 249.06607,479.25348 245.78656,492.36217 244.28571,492.36217 z"
+       transform="matrix(0.5571071,0,0,0.5571071,448.92823,64.62266)" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3181"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,799.15874,131.61745)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-BW.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <text
+       xml:space="preserve"
+       style="font-size:119.49964905px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="632.0119"
+       y="619.11761"
+       id="text3183"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-BW.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143"><tspan
+         sodipodi:role="line"
+         id="tspan3185"
+         x="632.0119"
+         y="619.11761">SPARX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.98551941px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="636.86896"
+       y="525.14966"
+       id="text3191"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-BW.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143"><tspan
+         sodipodi:role="line"
+         id="tspan3193"
+         x="636.86896"
+         y="525.14966">Team</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2485"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,845.83808,116.33984)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-BW.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2487"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,844.16745,165.94575)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-BW.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#e5ae14;fill-opacity:0.98823529;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2503"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,804.26602,304.63816)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <text
+       xml:space="preserve"
+       style="font-size:119.49964905000000000px;font-style:normal;font-weight:normal;fill:#2f73b5;fill-opacity:0.98823529;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="637.11926"
+       y="792.13831"
+       id="text2505"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143"><tspan
+         sodipodi:role="line"
+         id="tspan2507"
+         x="637.11926"
+         y="792.13831">SPARX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.98551941000000200px;font-style:normal;font-weight:normal;fill:#b3b3b3;fill-opacity:0.98823529;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:PetitaBold"
+       x="641.97632"
+       y="698.17035"
+       id="text2509"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143"><tspan
+         sodipodi:role="line"
+         id="tspan2511"
+         x="641.97632"
+         y="698.17035">Team</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#e5ae14;fill-opacity:0.98823529;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2513"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,850.94542,289.36055)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#e5ae14;fill-opacity:0.98823529;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2515"
+       sodipodi:sides="8"
+       sodipodi:cx="244.28571"
+       sodipodi:cy="463.79074"
+       sodipodi:r1="28.571428"
+       sodipodi:r2="12.318814"
+       sodipodi:arg1="1.5707963"
+       sodipodi:arg2="1.9335341"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.1"
+       inkscape:randomized="0"
+       d="M 244.28571,492.36217 C 242.52595,492.41492 241.54109,475.98169 239.91456,475.30796 C 238.24621,474.6169 225.39724,485.23185 224.08266,483.99379 C 222.80101,482.78676 233.72466,470.47031 233.05094,468.84377 C 232.35989,467.17542 215.76839,465.59573 215.71428,463.79074 C 215.66152,462.03098 232.09475,461.04612 232.76849,459.41959 C 233.45955,457.75125 222.84459,444.90228 224.08265,443.58769 C 225.28969,442.30605 237.60614,453.2297 239.23267,452.55597 C 240.90102,451.86493 242.48071,435.27342 244.2857,435.21931 C 246.04546,435.16656 247.03032,451.59979 248.65685,452.27353 C 250.3252,452.96458 263.17417,442.34963 264.48876,443.58769 C 265.7704,444.79472 254.84675,457.11117 255.52048,458.73771 C 256.21152,460.40606 272.80302,461.98575 272.85713,463.79074 C 272.90989,465.5505 256.47666,466.53536 255.80292,468.16189 C 255.11186,469.83023 265.72682,482.67921 264.48876,483.99379 C 263.28172,485.27543 250.96527,474.35178 249.33874,475.02551 C 247.67039,475.71656 246.0907,492.30806 244.28571,492.36217 z"
+       transform="matrix(0.8099367,0,0,0.8099367,849.27482,338.96646)"
+       inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+       inkscape:export-xdpi="105.38143"
+       inkscape:export-ydpi="105.38143" />
+    <rect
+       style="opacity:0.98672569;fill:#b55230;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2440"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="385.61111"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98672569;fill:#3073b5;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3212"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="694.80096"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98672569;fill:#e5ae14;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3214"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="488.67435"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98672569;fill:#92cd00;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3216"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="591.73761"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98672569;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3218"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="900.92749"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98672569;fill:#9b1084;fill-opacity:0.98823529;stroke:none;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3411"
+       width="161.6244"
+       height="88.893425"
+       x="1214.6339"
+       y="797.8642"
+       inkscape:export-filename="X:\ImagineCup\Images\colorscheme.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

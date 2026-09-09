@@ -1,0 +1,47 @@
+Version History
+===============
+
+PDFsharp 1.0 (June 18, 2007)
+----------------------------
+New features since Build 653
+* Improved support for Unicode
+* Font embedding and subsetting
+* Bug fixed in connection with Acrobat 8
+* New sample demonstrates using PDFsharp and MigraDoc to create a document
+
+The support for .NET 1.1 and Visual Studio 2003 was dropped.
+Developed for and tested with .NET 2.0 and Visual Studio 2005.
+
+
+PDFsharp 0.9.653 (beta 4, October 18, 2006)
+--------------------------------------------
+New features since Build 345
+* Support for Unicode
+* Advanced text layout with new TextFormatter class
+* Three new C# samples
+* Various bug fixes 
+* Many minor improvements 
+
+PDFsharp 0.8.494 (beta 3, May 10, 2006)
+--------------------------------------------
+New features since Build 345
+* Solutions for Visual Studio 2003 and Visual Studio 2005 included
+* Various bug fixes
+* Many improvements
+* New samples: ConcatenateDocuments, XForms
+
+PDFsharp 0.7.345 (beta 2, December 16, 2005)
+--------------------------------------------
+New features since Build 284
+* Linear gradient brushes
+* XGraphics.Save/Restore now work properly with nested calls
+* TextAnnotations, Rubber stamp annotations
+* Read content of interactive form fields (AcroForms) (still under construction)
+* Write interactive form fields (AcroForms) (still under construction)
+* First two bar code types (Code2of5Interleaved and Code3of9Standard)
+* XPdfForm objects as templates. Use XGraphics class to create PDF form objects.
+
+PDFsharp 0.7.284 (beta 1, October 13, 2005)
+--------------------------------------------
+First publicly available open source version.
+We think it's mature (with respect to functionality) for evaluation in real projects.

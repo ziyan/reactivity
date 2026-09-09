@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Graphing Test</title>
+<script src="prototype.js" type="text/javascript"></script>
+<script type="text/javascript">
+function watch(url)
+{
+	new Ajax.Request(url,
+	  {
+	    method:'get',
+	    onSuccess: function(transport){
+	      var response = transport.responseText || "no response text";
+	      post(response);
+	      setTimeout("watch('"+url+"')",0);
+	    },
+	    onFailure: function(){ post('Something went wrong...') }
+	  });
+}
+function post(msg)
+{
+	$("post").innerHTML += msg + "<br/>";
+	window.scrollBy(0,1000);
+}
+function onLoad()
+{
+	setTimeout("watch('/handler.ashx?a=a')",0);
+	setTimeout("watch('/handler.ashx?a=b')",0);
+	setTimeout("watch('/handler.ashx?a=c')",0);
+	setTimeout("watch('/handler.ashx?a=d')",0);
+	setTimeout("watch('/handler.ashx?a=e')",0);
+	
+}
+</script>
+
+</head>
+
+<body onload="onLoad()">
+<div id="post">
+</div></body>
+</html>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="46.522739"
+   height="45.328831"
+   id="svg4339"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="sparxLivefavIcon.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4341">
+    <linearGradient
+       id="linearGradient3394">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3396" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3398" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3394"
+       id="linearGradient4337"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.116359,0,0,0.8957692,429.5965,152.82793)"
+       x1="700.32062"
+       y1="836.80487"
+       x2="697.98151"
+       y2="1013.3398" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4347" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="-1.1539595"
+     inkscape:cy="14.574019"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="640"
+     inkscape:window-height="651"
+     inkscape:window-x="22"
+     inkscape:window-y="22" />
+  <metadata
+     id="metadata4344">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-742.45292,-995.41207)">
+    <path
+       style="opacity:1;fill:#92d842;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 756.31973,997.82697 L 769.41837,1011.3338 L 742.45292,1007.445 L 768.599,1014.206 L 758.25046,1018.0631 L 769.12233,1017.247 L 749.94245,1033.9303 C 749.94881,1033.9389 749.95204,1033.9538 749.95844,1033.9623 L 771.73886,1019.2474 L 767.60203,1030.0656 L 774.11534,1020.8877 L 773.68785,1040.7409 L 777.27597,1021.1517 L 782.49299,1029.9226 L 779.68669,1020.9007 L 788.97566,1027.9937 L 780.63322,1018.8199 L 785.37231,1019.1846 L 781.09075,1016.1014 L 786.27812,1014.4138 L 781.2264,1013.0393 L 786.01244,1009.6707 L 780.51735,1010.6783 L 782.82484,1001.6043 L 777.67795,1008.9352 L 776.51178,999.65147 L 775.20415,1008.1132 L 769.97421,995.41207 L 771.648,1008.8219 L 756.31973,997.82697 z"
+       id="path4311"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccc"
+       inkscape:export-filename="C:\Users\Zack\Desktop\sparxLiveLogo-web.png"
+       inkscape:export-xdpi="25.598509"
+       inkscape:export-ydpi="25.598509" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4314"
+       width="32.5"
+       height="32.5"
+       x="753.74573"
+       y="1000.606"
+       inkscape:export-filename="C:\Users\Zack\Desktop\favicon32-withS.png"
+       inkscape:export-xdpi="88.615387"
+       inkscape:export-ydpi="88.615387" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4320"
+       width="31.000002"
+       height="31.000002"
+       x="755.64124"
+       y="1000.1483"
+       inkscape:export-filename="C:\Users\Zack\Desktop\favicon32.png"
+       inkscape:export-xdpi="92.903229"
+       inkscape:export-ydpi="92.903229" />
+    <g
+       id="g4332"
+       transform="matrix(0.1442541,0,0,0.1442541,651.25683,863.83747)">
+      <text
+         transform="scale(1.116359,0.8957692)"
+         inkscape:export-ydpi="105.38143"
+         inkscape:export-xdpi="105.38143"
+         inkscape:export-filename="C:\Users\Zack\Desktop\ImagineCup\Reactivity-Repo\Presentation\Images\teamSparxLogo-Color.png"
+         id="text4324"
+         y="1219.2808"
+         x="738.65674"
+         style="font-size:234.92163086px;font-style:normal;font-weight:bold;opacity:0.8557692;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Siple"
+         xml:space="preserve"><tspan
+           style="fill:#000000;fill-opacity:1;-inkscape-font-specification:Siple"
+           y="1219.2808"
+           x="738.65674"
+           id="tspan4326"
+           sodipodi:role="line">s</tspan></text>
+      <path
+         id="path4328"
+         d="M 867.84242,987.1156 C 854.20986,987.1158 844.23221,988.6539 837.93617,991.7406 C 828.84425,996.2276 824.31116,1004.4885 824.31117,1016.5531 C 824.31117,1031.7048 836.03864,1041.9417 859.46742,1047.2719 C 862.26325,1047.8328 864.42462,1048.2706 865.99867,1048.5531 C 869.32273,1049.3966 872.49544,1051.0123 875.46742,1053.3969 C 878.43931,1055.7816 879.90487,1057.6027 879.90492,1058.8656 C 879.90486,1065.3176 877.82275,1069.2426 873.62367,1070.6469 C 872.22569,1071.0665 867.21858,1071.2719 858.65492,1071.2719 C 852.53493,1071.2719 849.49864,1068.9626 849.49867,1064.3344 L 824.31117,1064.5531 C 824.48724,1072.9703 828.58288,1079.8436 836.62367,1085.1781 C 843.79474,1089.8063 852.12241,1092.1156 861.56117,1092.1156 C 873.27816,1092.1156 882.34431,1090.5775 888.81117,1087.4906 C 899.12486,1082.4387 904.31109,1073.0193 904.31117,1059.2719 C 904.31109,1050.4353 898.35511,1042.7402 886.46742,1036.1469 C 878.42658,1031.7971 871.70086,1029.2554 866.27992,1028.5531 C 855.09108,1027.1489 849.49864,1023.3788 849.49867,1017.2094 C 849.49865,1013.4205 850.9642,1010.8012 853.93617,1009.3969 C 856.03304,1008.4166 859.90157,1007.9282 865.49867,1007.9281 C 874.23839,1007.9282 879.21425,1011.0358 880.43617,1017.2094 L 903.77992,1017.3969 C 903.60377,1007.4386 899.22387,999.66607 890.65492,994.0531 C 883.66518,989.4251 876.06457,987.1158 867.84242,987.1156 z"
+         style="font-size:234.92163086px;font-style:normal;font-weight:bold;fill:url(#linearGradient4337);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Siple"
+         sodipodi:nodetypes="ccsccsscscccscsccscscccc" />
+    </g>
+  </g>
+</svg>

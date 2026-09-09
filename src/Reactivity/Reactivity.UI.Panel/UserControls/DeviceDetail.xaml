@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.UserControls.DeviceDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Reactivity.UI.Panel.UserControls"
+    xmlns:Swordfish="clr-namespace:Reactivity.UI.Panel.Swordfish;assembly=Reactivity.UI.Panel.Swordfish"
+    xmlns:TimeChart="clr-namespace:Reactivity.UI.Panel.TimeChart;assembly=Reactivity.UI.Panel.TimeChart"
+    Height="520" Width="660">
+    <UserControl.Resources>
+        <Style x:Key="labelText">
+            <Setter Property="Label.FontSize" Value="14" />
+            <Setter Property="Label.Foreground" Value="White" />
+            <Setter Property="Grid.HorizontalAlignment" Value="Right"/>
+            <Setter Property="Label.FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="valueText">            
+            <Setter Property="TextBox.FontSize" Value="12" />
+            <Setter Property="TextBox.Foreground" Value="White" />
+            <Setter Property="TextBox.Background" Value="Transparent"/>           
+            <Setter Property="TextBox.BorderBrush" Value="Transparent" />  
+            <Setter Property="TextBox.TextWrapping" Value="Wrap" />
+            <Setter Property="TextBlock.Margin" Value="0,7,0,0" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="480" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Border BorderBrush="White" BorderThickness="2" CornerRadius="4" Grid.RowSpan="2">
+            <Border.Background>
+                <SolidColorBrush Opacity="0.7" Color="#003262" />
+            </Border.Background>
+        </Border>
+        <DockPanel Margin="10">
+            <!-- Device Info Section -->
+            <Grid DockPanel.Dock="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" Name="ACControlRow" />
+                    <RowDefinition Height="Auto" Name="ComputerControlRow" />                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Style="{StaticResource labelText}" VerticalAlignment="Top">Device Name/Status:</Label>
+                <TextBlock x:Name="deviceName" Grid.Row="0" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource labelText}">Device Description:</Label>
+                <TextBlock x:Name="deviceDesc" Grid.Row="1" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+
+                <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource labelText}" VerticalAlignment="Top">Device Model:</Label>
+                <TextBlock x:Name="deviceModel" Grid.Row="2" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+                
+                <Label Grid.Row="3" Grid.Column="0" Style="{StaticResource labelText}">Building Name:</Label>
+                <TextBlock x:Name="buildingName" Grid.Row="3" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+                
+                <Label Grid.Row="4" Grid.Column="0" Style="{StaticResource labelText}">Building Location:</Label>
+                <TextBlock x:Name="buildingLocation" Grid.Row="4" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+                
+                <Label Grid.Row="5" Grid.Column="0" Style="{StaticResource labelText}">Floor Location:</Label>
+                <TextBlock x:Name="floorLocation" Grid.Row="5" Grid.Column="2" Style="{StaticResource valueText}"></TextBlock>
+                                
+                <Label Grid.Row="6" Grid.Column="0" Style="{StaticResource labelText}">AC Control:</Label>
+                <WrapPanel Grid.Row="6" Grid.Column="2" VerticalAlignment="Center">
+                    <TextBlock x:Name="ACStatus" Grid.Row="6" Grid.Column="2" Style="{StaticResource valueText}" VerticalAlignment="Center">AC Relay Status: ON</TextBlock>
+                    <Button Name="ACToggleButton" Click="ACToggleButton_Click" Width="110" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Toggle Relay</Button>
+                </WrapPanel>
+                
+                <Label Name="computerControlLabel" Grid.Row="7" Grid.Column="0" Style="{StaticResource labelText}">Computer Control:</Label>
+                <WrapPanel Name="computerControlButtons" Grid.Row="7" Grid.Column="2" VerticalAlignment="Center">                    
+                    <Button Name="logoff" Click="logoff_Click" Width="60" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Log-off</Button>
+                    <Button Name="shutdown" Click="shutdown_Click" Width="60" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Shutdown</Button>
+                    <Button Name="restart" Click="restart_Click" Width="60" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Restart</Button>
+                    <Button Name="suspend" Click="suspend_Click" Width="60" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Suspend</Button>
+                    <Button Name="hibernate" Click="hibernate_Click" Width="60" Margin="10,5,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top">Hibernate</Button>
+                </WrapPanel>
+
+                <DockPanel x:Name="deviceImages" Grid.Row="0" Grid.Column="3" Grid.RowSpan="6">
+                    <Image x:Name="deviceModelImage" Width="100" Height="100" Margin="10" DockPanel.Dock="Top"/>
+                    <Image x:Name="buildingImage" Width="100" Height="100" Margin="10" DockPanel.Dock="Top"/>
+                </DockPanel>
+                
+            </Grid>
+                      
+            <!-- Loading Bar -->
+            <local:LoadingWidget x:Name="loading" DockPanel.Dock="Top" />
+
+            <!-- Chart -->
+            <TimeChart:WpfMultiChart x:Name="timeChart" Margin="10,10,15,10" DockPanel.Dock="Top" Visibility="Collapsed"/>
+            
+        </DockPanel>
+        <!-- Add/Close -->
+        <WrapPanel HorizontalAlignment="Center" Height="25" Grid.Row="1">
+            <Button x:Name="addToMainChart" Width="150" Height="25" Margin="0,0,10,0" DockPanel.Dock="Top" Click="addToMainChart_Click" Visibility="Collapsed">Add Device to Main Chart</Button>
+            <Button x:Name="close" Width="100" Height="25" DockPanel.Dock="Top" Click="close_Click">Close</Button>
+        </WrapPanel>
+    </Grid>
+</UserControl>

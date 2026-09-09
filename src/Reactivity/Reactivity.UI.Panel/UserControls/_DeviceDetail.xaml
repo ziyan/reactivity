@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.UserControls._DeviceDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Width="250" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Border BorderBrush="White" Opacity="0.7" BorderThickness="3" CornerRadius="7" Background="#003262" Padding="5">
+        <StackPanel>
+            <TextBlock x:Name="deviceLabel" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Text="Device Info"></TextBlock>
+            <TextBlock Text="Hello World" Margin="10,0,0,0" x:Name="generalInfoText" TextWrapping="Wrap" Foreground="White" />
+
+            <Image x:Name="luminosityIcon" Source="../Resources/Service Icons/luminosity.png" Visibility="Collapsed" />
+            <Image x:Name="temperatureIcon" Source="../Resources/Service Icons/temperature.png" Height="60" Visibility="Collapsed"/>
+            <Image x:Name="humidityIcon" Source="../Resources/Service Icons/humidity.png" Visibility="Collapsed" />
+
+            <StackPanel x:Name="DetailContainer">
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

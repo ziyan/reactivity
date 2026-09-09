@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.Chart.LiveChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Loaded="UserControl_Loaded"
+    Width="780" Height="220">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="586.96*" />
+            <ColumnDefinition Width="180" />
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="White" Opacity="0.6" BorderThickness="3" CornerRadius="7" Background="#003262" Grid.ColumnSpan="2" />
+        <Border BorderBrush="White" Opacity="1" BorderThickness="1" Grid.Column="0"  Margin="30,25,10,40" />
+        <Canvas x:Name="graphCanvas" Margin="30,25,10,40" Grid.Column="0"/>
+        <Label x:Name="title" Foreground="White" VerticalAlignment="Top"  Height="30" FontWeight="Bold" FontSize="14" BorderThickness="0" HorizontalContentAlignment="Center">Inputs</Label>
+        <Label x:Name="xAxisLabel" Foreground="White" VerticalAlignment="Bottom" Height="25" FontWeight="Bold" FontSize="12" BorderThickness="0" HorizontalContentAlignment="Center">Time since Acquisition (sec)</Label>
+        <Label Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" Foreground="White" Height="25" HorizontalContentAlignment="Center" Width="60" Grid.ColumnSpan="2">Series</Label>
+        <StackPanel Grid.Column="1" Margin="10,30" x:Name="Series">
+        </StackPanel>
+        <!--<TextBox Canvas.Left="0" Canvas.Top="0" Height="54" Name="textBox1" Width="54" />-->
+    </Grid>
+</UserControl>

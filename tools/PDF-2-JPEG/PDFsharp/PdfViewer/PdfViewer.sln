@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp", "..\PdfSharp\PdfSharp.csproj", "{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharp.Viewing", "PdfSharp.Viewing\PdfSharp.Viewing.csproj", "{6403D294-D12F-48EA-A9DD-A864035D2A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfViewer", "PdfViewer.Demo\PdfViewer.csproj", "{23A2AB14-DBAF-4FE0-B33F-1FFE3E8FAFAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5384CE57-1F94-4D22-860D-2E9C1AC12DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6403D294-D12F-48EA-A9DD-A864035D2A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6403D294-D12F-48EA-A9DD-A864035D2A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6403D294-D12F-48EA-A9DD-A864035D2A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6403D294-D12F-48EA-A9DD-A864035D2A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A2AB14-DBAF-4FE0-B33F-1FFE3E8FAFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A2AB14-DBAF-4FE0-B33F-1FFE3E8FAFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A2AB14-DBAF-4FE0-B33F-1FFE3E8FAFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A2AB14-DBAF-4FE0-B33F-1FFE3E8FAFAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

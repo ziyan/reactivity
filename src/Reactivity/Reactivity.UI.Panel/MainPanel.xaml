@@ -1,0 +1,46 @@
+﻿<Window x:Class="Reactivity.UI.Panel.MainPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
+    xmlns:UserControls="clr-namespace:Reactivity.UI.Panel.UserControls"
+    Title="Reactivity" Height="600" Width="800" WindowStartupLocation="CenterScreen"
+    x:Name="MainPanelWindow" WindowStyle="SingleBorderWindow" KeyDown="Window_KeyDown" StateChanged="Window_StateChanged" Loaded="Window_Loaded">   
+    <Window.Resources>
+        <Storyboard x:Key="liveChartStory">
+            <DoubleAnimation x:Name="slideChart" Storyboard.TargetName="liveChart" Storyboard.TargetProperty="UserControls:LiveChart.RenderTransform.X" />
+        </Storyboard>
+        <Storyboard x:Key="fadeInUpperGUI">
+            <DoubleAnimation x:Name="fadeGUI" Storyboard.TargetName="upperGUIContainer" Storyboard.TargetProperty="(Grid.Opacity)"
+                             From="0" To="1"/>
+        </Storyboard>
+    </Window.Resources>
+    <Grid x:Name="RootGrid">
+
+        <!-- Initial building selector -->
+        <Grid Name="buildingSelect">
+            <DockPanel Height="270" Width="220" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock HorizontalAlignment="Center" DockPanel.Dock="Top" TextBlock.FontWeight="Bold" TextBlock.Foreground="White" TextBlock.FontSize="14">Select a Building</TextBlock>
+                <UserControls:BuildingSwitcher x:Name="buildingSwitcherLarge" Width="220" Height="250" DockPanel.Dock="Top"/>
+                <!--<Button x:Name="selectionComplete" Click="selectionComplete_Click" Width="80" DockPanel.Dock="Top">Continue</Button>-->
+            </DockPanel>
+        </Grid>
+        
+        <!-- Contains the main BuildingView -->
+        <Grid Name="buildingViewContainer">            
+        </Grid>
+        
+        <!-- Interactive GUI Items -->
+        <Grid Name="upperGUIContainer">            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="190" />
+            </Grid.RowDefinitions>
+            <UserControls:BuildingSwitcher x:Name="buildingSwitcher" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+            <!-- Live Chart -->
+            <UserControls:LiveChart x:Name="liveChart" Grid.Row="1" Margin="10,0,10,0" />                                    
+        </Grid>
+                
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/background.jpg"/>            
+        </Grid.Background>        
+    </Grid>
+</Window>

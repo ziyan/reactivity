@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Reactivity.UI.Panel.UserControls.LiveChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:TimeChart="clr-namespace:Reactivity.UI.Panel.TimeChart;assembly=Reactivity.UI.Panel.TimeChart"
+    Height="180" Width="Auto">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30"/>                           
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="White" BorderThickness="2" CornerRadius="6" Grid.ColumnSpan="2">
+            <Border.Background>
+                <SolidColorBrush Opacity="0.7" Color="#003262" />
+            </Border.Background>
+        </Border>
+        
+        <!-- Time Chart --> 
+        <TimeChart:WpfMultiChart x:Name="timeChart" Margin="5,5,15,5" Grid.Column="0" />
+        
+        <!-- Live Chart Label -->        
+        <DockPanel VerticalAlignment="Center" Grid.Column="2" Margin="0,0,0,0">
+        <Image Source="../Resources/liveChartIcon.png" Margin="0,7,0,10" Width="25" DockPanel.Dock="Top">
+            <Image.LayoutTransform>
+                <RotateTransform Angle="-90"/>
+            </Image.LayoutTransform>
+        </Image>
+        <Label TextBlock.FontSize="16" Foreground="White" TextBlock.TextAlignment="Right" DockPanel.Dock="Top">
+            Live Chart
+            <Label.LayoutTransform>
+                <RotateTransform Angle="-90"/>
+            </Label.LayoutTransform>
+        </Label>
+        </DockPanel>
+        <Rectangle Fill="White" Opacity="0" Grid.Column="2" MouseLeftButtonUp="Rectangle_MouseLeftButtonUp"/>
+    </Grid>
+</UserControl>
